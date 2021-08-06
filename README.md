@@ -1,5 +1,5 @@
 
-# shinytreeview
+# shinytreeviewCustom
 
 > Hierarchical tree structures input for Shiny applications. Interface for [bootstrap-treeview](https://github.com/patternfly/patternfly-bootstrap-treeview) JS library.
 
