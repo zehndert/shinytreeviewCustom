@@ -123,11 +123,12 @@ make_tree <- function(data, levels, selected = NULL, ...) {
         }
       }
       if (length(levels) == 1) {
-        c(list(text = var), args_level)
+        c(list(text = var, id = dat[,1]), args_level)
       } else {
         c(
           list(
             text = var,
+            id = dat[,1],
             nodes = make_tree(
               data = dat,
               levels = levels[-1],
@@ -141,7 +142,6 @@ make_tree <- function(data, levels, selected = NULL, ...) {
     }
   )
 }
-
 
 
 
