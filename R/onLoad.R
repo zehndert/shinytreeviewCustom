@@ -4,7 +4,7 @@
 #' @noRd
 #'
 .onLoad <- function(...) {
-  shiny::addResourcePath("shinytreeviewCustom", system.file("assets", package = "shinytreeview"))
+  shiny::addResourcePath("shinytreeviewCustom", system.file("assets", package = "shinytreeviewCustom"))
   shiny::registerInputHandler("treeview.name", function(data, ...) {
     if (is.null(data) || length(data) < 1) {
       NULL
